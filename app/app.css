@@ -1,15 +1,63 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  margin-top: 6rem;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.scrollable-cards-container {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 0 16px 0;
+  scroll-snap-type: y mandatory;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 20px;
+  gap: 24px;
+  scroll-snap-align: start;
+  width: 80vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-image {
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  margin-bottom: 0;
+}
+
+.card-text {
+  flex: 1;
+  text-align: left;
+  max-width: 400px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-description {
+  margin: 10px 0 0 0;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5;
 }
