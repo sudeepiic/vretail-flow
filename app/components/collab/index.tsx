@@ -1,9 +1,9 @@
 import React from "react";
 import { cards } from "./data";
 
-const ScrollableCards: React.FC = () => {
+const CollabCards: React.FC = () => {
   return (
-    <div className="w-full max-w-[1100px] mx-auto p-6 space-y-12">
+    <div className="w-full px-[10rem] mx-auto p-6 space-y-12">
       {cards.map((card, idx) => {
         const imageOnLeft = idx % 2 === 0;
         const descriptionPoints = card.description.split(". ").filter(Boolean);
@@ -25,19 +25,19 @@ const ScrollableCards: React.FC = () => {
 
             <div className="w-full md:w-1/2 p-8 text-center md:text-left">
               <h3
-  className="text-3xl font-bold mb-6 text-violet-700 
+                className="text-3xl font-bold mb-6 text-violet-700 
              bg-clip-text "
->
-  {card.title}
-</h3>
-             <ul className="text-gray-900 text-lg leading-relaxed max-w-lg mx-auto md:mx-0 space-y-3">
-  {descriptionPoints.map((point, i) => (
-    <li key={i} className="flex items-start">
-      <span className="text-violet-700 mr-3 mt-1">⦿</span>
-      <span>{point.trim()}</span>
-    </li>
-  ))}
-</ul>
+              >
+                {card.title}
+              </h3>
+              <ul className="text-gray-900 text-lg leading-relaxed max-w-lg mx-auto md:mx-0 space-y-3">
+                {descriptionPoints.map((point, i) => (
+                  <li key={i} className="flex items-start">
+                    <span className="text-violet-700 mr-3 mt-1">⦿</span>
+                    <span>{point.trim()}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             {!imageOnLeft && (
@@ -56,4 +56,4 @@ const ScrollableCards: React.FC = () => {
   );
 };
 
-export default ScrollableCards;
+export default CollabCards;

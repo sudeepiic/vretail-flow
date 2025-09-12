@@ -14,10 +14,7 @@ const cards: CardData[] = [
         image: "/flow-images/data-vaults/login.png",
         title: "Login to Your Account",
         description: "This is your secure gateway to the platform.",
-        subinfo: `Enter your email and password to get started.
-Forgot your password? Click “Forgot Password” to reset it quickly.
-Use the eye icon to show or hide your password while typing.
-If something’s missing or too short, the system will guide you with a quick error message.`,
+        subinfo: "First :Enter your email and password to get started.\nForgot your password? : Click “Forgot Password” to reset it quickly.\nUse the eye icon : to show or hide your password while typing.\nIf something’s missing or too short : the system will guide you with a quick error message.",
     },
     {
         id: 2,
@@ -175,22 +172,22 @@ If something’s missing or too short, the system will guide you with a quick er
 
 const DataVault: React.FC = () => {
     return (
-        <div className="scrollable-cards-container w-full">
+        <div className="w-full px-[10rem] mx-auto p-6 space-y-12">
             <div className="cards-wrapper">
                 {cards.map((card, idx) => {
                     const imageOnLeft = idx % 2 === 0;
                     return (
-                        <div key={card.id} className="card-row">
+                        <div key={card.id} className="flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100 mb-14">
                             <div className={`card-content flex w-full ${imageOnLeft ? '' : 'flex-row-reverse'}`}>
                                 <div className="card-image-wrapper w-[60%] m-4 group">
                                     <img
                                         src={card.image}
                                         alt={card.title}
-                                        className="card-image transition-transform duration-300 ease-in-out group-hover:scale-150 cursor-pointer"
+                                        className="card-image transition-transform duration-300 ease-in-out mx-auto cursor-pointer"
                                     />
                                 </div>
                                 <div className="card-text w-[40%] m-4 flex flex-col justify-center mx-auto">
-                                    <h3 className="card-title">{card.title}</h3>
+                                    <h3 className=" text-3xl font-bold  text-violet-700 ">{card.title}</h3>
                                     <p className="card-description">{card.description}</p>
                                     {card.subinfo && (
                                         <ul className=" list-inside mt-4">

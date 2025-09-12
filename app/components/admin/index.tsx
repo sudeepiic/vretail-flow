@@ -2,9 +2,9 @@ import React from "react";
 import { cards } from "./data";
 import { CheckCircle } from "lucide-react";
 
-const ScrollableCards: React.FC = () => {
+const AdminCards: React.FC = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto p-4 space-y-16 my-12">
+    <div className="w-full px-[10rem] mx-auto p-4 space-y-16 my-12">
       {cards.map((card, idx) => {
         const imageOnLeft = idx % 2 === 0;
         return (
@@ -15,9 +15,8 @@ const ScrollableCards: React.FC = () => {
           >
             {/* Floating badge */}
             <div
-              className={`absolute bottom-4 ${
-                !imageOnLeft ? "left-4" : "right-4"
-              } text-indigo-200/20 text-[14rem] font-extrabold leading-none pointer-events-none select-none z-1`}
+              className={`absolute bottom-4 ${!imageOnLeft ? "left-4" : "right-4"
+                } text-indigo-200/20 text-[14rem] font-extrabold leading-none pointer-events-none select-none z-1`}
             >
               {card.id}
             </div>
@@ -76,4 +75,4 @@ const ScrollableCards: React.FC = () => {
   );
 };
 
-export default ScrollableCards;
+export default AdminCards;
