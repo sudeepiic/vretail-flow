@@ -28,7 +28,7 @@ export default function Home() {
 
 
   return <div className="mb-8">
-    <div className="flex space-x-4 border-b ml-[10rem]">
+    <div className="flex space-x-4 border-b ml-[10rem] fixed top-0 pt-10 bg-white z-10 h-34 w-[85%]">
       {tabs.map((tab, idx) => (
         <button
           key={tab.label}
