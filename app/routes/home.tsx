@@ -1,6 +1,8 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 import ScrollableCards from "~/components/admin";
+import ScrollableCard from "~/components/am";
+// import ScrollableCard from "~/components/collab";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,5 +12,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <ScrollableCards />;
+  return <ScrollableCard />;  
 }
