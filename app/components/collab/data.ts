@@ -50,30 +50,28 @@ export const cards: CardData[] = [
   },
   {
     id: 7,
+    image: "/flow-images/collab/settings.png",
+    title: "Call Settings",
+    description: "Once call or chat gets connect setting popup will be visible. \n  Users can control their privacy and device preferences with easy toggles for microphone and camera access. Microphone Toggle: Instantly mute or unmute audio input.\nCamera Toggle: Switch video stream on or off as needed.\n User Control: Empowers participants to adjust their presence dynamically. \n Seamless Access: Settings are available in-call also without disrupting the ongoing session."
+  },
+  {
+    id: 8,
     image: "/flow-images/collab/video&chat.png",
     title: "Call and Chat ",
     description:
       "A live chat support option is available for immediate assistance, and there are controls for video, audio, settings. The setup offers an interactive experience for users exploring the property, with support available throughout the tour.",
   },
   {
-    id: 8,
-    image: "/flow-images/collab/main.png",
-    title: "Virtual Experience ",
-    description:
-      "The Page provides users with a fully interactive project walkthrough. User can explore sections such as Overview, Highlights, Amenities, Interior Units, Brochure, Vicinity, and Access Roads. Along with project exploration, users have the option to connect with sales person through real-time video and audio chat, ensuring personalized guidance while browsing.",
-  },
-  {
     id: 9,
-    image: "/flow-images/collab/amenities.png",
-    title: "Interactive Virtual Property Tour with Live Support ",
-    description:
-      "This Interface shows a virtual property tour interface, allowing users to explore different areas of the property, such as the Lift Lobby and various levels like the Ground Level, Clubhouse, and Podium Level. The platform provides navigation options for users to access detailed sections like the property Overview, Highlights, Interior Unit. It also offers information about the Vicinity and Access Roads. A live chat support feature is available for real-time assistance.",
-  },
-  {
-    id: 10,
     image: "/flow-images/collab/pin.png",
     title: "Secure Project Access",
     description:
       "Some projects require secure entry. Users are prompted to enter a unique PIN provided by the project owner. Once verified, they gain full access to explore and interact with the project’s features, ensuring restricted content is only accessible to authorized visitors."
+  },
+  {
+    id: 10,
+    image: "/flow-images/collab/feedback.png",
+    title: "Feedback Form",
+    description: "At the end of each call or video session, users are prompted with a feedback form to rate their experience and share comments for service improvement.  Rating System: Quick star-based or emoji ratings to capture satisfaction level.\nComments: Optional text input to provide specific suggestions, concerns, or highlights.\nService Evaluation: Helps track agent performance, call quality, and overall support effectiveness.\nContinuous Improvement: Collected feedback is analyzed to refine future interactions and enhance customer satisfaction."
   }
 ];
