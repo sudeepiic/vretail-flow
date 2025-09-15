@@ -25,6 +25,7 @@ export const cards: CardData[] = [
     description:
       "Get a detailed overview of session activity, project engagement, and team performance in one unified dashboard.",
     features: [
+      "Global search dropdown in the header to easily select a project and fetch its data across all pages.",
       "Track total session time, number of sessions(Chats & Calls)",
       "View website traffic overview with website users and active Vretail users for different time ranges.",
       "Interactive global heatmap of user activity",
