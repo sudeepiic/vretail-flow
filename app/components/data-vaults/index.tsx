@@ -14,7 +14,7 @@ const cards: CardData[] = [
         image: "/flow-images/data-vaults/login.png",
         title: "Login to Your Account",
         description: "This is your secure gateway to the platform.",
-        subinfo: "First :Enter your email and password to get started.\nForgot your password? : Click “Forgot Password” to reset it quickly.\nUse the eye icon : to show or hide your password while typing.\nIf something’s missing or too short : the system will guide you with a quick error message.",
+        subinfo: "First :Enter your email and password to get started.\nForgot your password? : Click “Forgot Password” to reset it quickly.\nUse the eye icon : to show or hide your password while typing.",
     },
     {
         id: 2,
@@ -172,12 +172,12 @@ const cards: CardData[] = [
 
 const DataVault: React.FC = () => {
     return (
-        <div className="w-full px-[10rem] mx-auto p-6 space-y-12">
+        <div className="w-full px-[10rem] mx-auto  space-y-12 pt-4">
             <div className="cards-wrapper">
                 {cards.map((card, idx) => {
                     const imageOnLeft = idx % 2 === 0;
                     return (
-                        <div key={card.id} className="flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100 mb-14">
+                        <div key={card.id} className="flex flex-col md:flex-row items-center p-3  justify-between bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100 mb-14">
                             <div className={`card-content flex w-full ${imageOnLeft ? '' : 'flex-row-reverse'}`}>
                                 <div className="card-image-wrapper w-[60%] m-4 group">
                                     <img
