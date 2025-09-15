@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 const AdminCards: React.FC = () => {
   return (
-    <div className="w-full px-[10rem] mx-auto p-4 ">
+    <div className="w-full px-[10rem] mx-auto p-4  space-y-16">
       {cards.map((card, idx) => {
         const imageOnLeft = idx % 2 === 0;
         return (

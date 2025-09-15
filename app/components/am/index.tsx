@@ -8,13 +8,13 @@ import CollabCards from "../collab";
 
 const AmCards: React.FC = () => {
   return (
-    <div className="w-full px-[10rem] mx-auto p-4 space-y-16 ">
+    <div className="w-full px-[10rem] mx-auto p-4  space-y-16 ">
       {cards.map((card, idx) => {
         const imageOnLeft = idx % 2 === 0;
         return (
           <div
             key={card.id}
-            className="relative flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-md border border-indigo-100 overflow-hidden p-6 
+            className="relative flex flex-col md:flex-row  items-center justify-between bg-white rounded-3xl shadow-md border border-indigo-100 overflow-hidden p-6 
                        hover:shadow-xl hover:-translate-y-1 hover:border-indigo-300 transition-all duration-300"
           >
             {/* Floating badge */}
