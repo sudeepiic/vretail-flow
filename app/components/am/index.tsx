@@ -8,7 +8,7 @@ import CollabCards from "../collab";
 
 const AmCards: React.FC = () => {
   return (
-    <div className="w-full px-[10rem] mx-auto p-4 space-y-16 my-12">
+    <div className="w-full px-[10rem] mx-auto p-4 space-y-16 ">
       {cards.map((card, idx) => {
         const imageOnLeft = idx % 2 === 0;
         return (
@@ -19,9 +19,8 @@ const AmCards: React.FC = () => {
           >
             {/* Floating badge */}
             <div
-              className={`absolute bottom-4 ${
-                !imageOnLeft ? "left-4" : "right-4"
-              } text-indigo-200/20 text-[14rem] font-extrabold leading-none pointer-events-none select-none z-1`}
+              className={`absolute bottom-4 ${!imageOnLeft ? "left-4" : "right-4"
+                } text-indigo-200/20 text-[14rem] font-extrabold leading-none pointer-events-none select-none z-1`}
             >
               {card.id}
             </div>
